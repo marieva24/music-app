@@ -7,7 +7,7 @@ const precache = [
   './js/register-sw.js',
   './index.html',
   './music.html',
-
+  './css/estilo.css',
   './offline.html'
 ];
 
