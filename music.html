@@ -4,49 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Okuneva Marina DWN3A PWA</title>
-    <!-- MANIFEST ???
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="shortcut icon" href="res/img/icon/logo.svg" type="image/x-icon">   
-    O el favicon??? 
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">???
-    -->
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body>
-    <header class="container-fluid bg1">
+ <header class="container-fluid bg1">
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark bg-bg1">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="music.html.html">
             <h1>BeatPort</h1>
         </a>
-        <!--cambiar el navbarCollapse?-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!--cambiar el navbarCollapse?-->
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="music.html">Música</a>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="music.html">Música<span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <!--<div class="offline-banner">
-        <div class="text-center bg-danger">Status:
-            <h2 class="st-offline">Offline!</h2>
-        </div>
-    </div>-->
     <section class="container-fluid buscar bg1">
             <!--<form class="form-inline mt-2 mt-md-0">-->
          
-            <form class="form-row justify-content-center">   
+            <!--<form class="form-row justify-content-center">   
                 <div class="col-8 col-md-5 col-sm-7">
                      <input class="form-control mr-sm-2 buscar" type="text" placeholder="Buscar" aria-label="Search">
                 </div>
@@ -56,7 +44,19 @@
                         <path d="M 13.261719 14.867188 L 15.742188 17.347656 C 15.363281 18.070313 15.324219 18.789063 15.722656 19.1875 L 20.25 23.714844 C 20.820313 24.285156 22.0625 23.972656 23.015625 23.015625 C 23.972656 22.058594 24.285156 20.820313 23.714844 20.25 L 19.191406 15.722656 C 18.789063 15.324219 18.070313 15.363281 17.347656 15.738281 L 14.867188 13.261719 Z M 8.5 0 C 3.804688 0 0 3.804688 0 8.5 C 0 13.195313 3.804688 17 8.5 17 C 13.195313 17 17 13.195313 17 8.5 C 17 3.804688 13.195313 0 8.5 0 Z M 8.5 15 C 4.910156 15 2 12.089844 2 8.5 C 2 4.910156 4.910156 2 8.5 2 C 12.089844 2 15 4.910156 15 8.5 C 15 12.089844 12.089844 15 8.5 15 Z"/></svg>
                      </button>
                  </div>   
+            </form>-->
+            <form id="formulario" class="form-row justify-content-center" >   
+                <div class="col-8 col-md-5 col-sm-7">
+                     <input id="input" class="form-control mr-sm-2 buscar" type="text" placeholder="Buscar" aria-label="Search">
+                </div>
+                <div id="button" class="col-3 col-md-2 ">
+                     <button class="btn" type="submit">
+                        <svg fill="#6f2dbd" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="1.5rem" height="1.5rem">
+                        <path d="M 13.261719 14.867188 L 15.742188 17.347656 C 15.363281 18.070313 15.324219 18.789063 15.722656 19.1875 L 20.25 23.714844 C 20.820313 24.285156 22.0625 23.972656 23.015625 23.015625 C 23.972656 22.058594 24.285156 20.820313 23.714844 20.25 L 19.191406 15.722656 C 18.789063 15.324219 18.070313 15.363281 17.347656 15.738281 L 14.867188 13.261719 Z M 8.5 0 C 3.804688 0 0 3.804688 0 8.5 C 0 13.195313 3.804688 17 8.5 17 C 13.195313 17 17 13.195313 17 8.5 C 17 3.804688 13.195313 0 8.5 0 Z M 8.5 15 C 4.910156 15 2 12.089844 2 8.5 C 2 4.910156 4.910156 2 8.5 2 C 12.089844 2 15 4.910156 15 8.5 C 15 12.089844 12.089844 15 8.5 15 Z"/></svg>
+                     </button>
+                 </div>   
             </form>
+
           <!--<div class="buscar">
             <input type="text" class="buscador" placeholder="Buscar ej. Berlin">
             <button><svg fill="#1F7A8C" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="1.3rem" height="1.3rem">
@@ -64,14 +64,25 @@
             </svg></button>
         </div>-->
             </section>
-    <main class="main">
-        
-        <section class="container bienvenido">
-             <div>
-                <h2 class="mt-4 p-2">Bienvenido a Beat Port</h2>
-                <p class="p-2">Nuestra aplicación ofrece una amplia selección de música.</br> 
-                Aquí vas a poder buscar por título de canción, artista o álbum. También vas a poder instalar la app en tu celular, tablet o pc.</p>
-             </div>
+    <main class="library">
+       <section class="container">
+        <div id="result" class="row p-3">
+            <article class="col-12 card m-auto p-2" style="width: 18rem;">
+        <img id="foto" class="card-img-top" src="" alt=""/>
+        <div class="card-body">
+            <h2 id="name" class="card-title"></h2>
+            <p id="genre" class="card-text"></p>
+            <p id="bio" class="card-text"></p>
+        </div>
+        <div class="card-body">
+            <ul class="list-unstyled py-4">
+                <li><a id="web" href="" class="card-link"></a></li>
+                <li><a id="fb" href=""  class="card-link"></a></li>
+                <li><a id="tw" href="" class="card-link"></a></li>
+            </ul>
+        </div>   
+        </article>
+        </div>      
       </section>
     </main>
 
@@ -90,10 +101,9 @@
 </section>-->
 
 
-    <footer class="footer pt-3 pb-3 bg1">
+     <footer class="footer pt-3 pb-3 bg1">
       <div class="container col-10 col-md-6 col-sm-8 m-auto my-1 ">
-                    <ul class="row text-center list-unstyled py-4">
-                        
+                    <ul class="row text-center list-unstyled py-4">               
                         <li class="col-4"><a class="btn-rss fb" target="_blank" href="https://www.facebook.com/">facebook</a>
                         </li>
                         <li class="col-4"><a class="btn-rss inst" target="_blank" href="https://www.instagram.com/">instagram</a>
@@ -103,25 +113,36 @@
                         </li>
                     </ul>          
       </div>
-    </footer>
-    <!--  example footer sticky fin-->
 
+      <details class="container text-center col-8 col-md-6 col-sm-8 m-auto my-1 ">
+        <div id="alumno" class="row m-auto my-1 text-center">
+        <summary class="container list-unstyled">Datos del alumno</summary>
+        
+            <ul class="container list-unstyled py-4">   
+                <li><strong>Alumno:</strong> Okuneva Marina</li>
+                <li><strong>Carrera:</strong> Diseño Web</li>
+                <li><strong>Materia:</strong> Aplicaciones Web Progresivas</li>
+                <li><strong>Profesor:</strong> Gonzalo Rubino</li>
+                <li><strong>Comisión:</strong> 3A; turno Noche</li>
+                <li><strong>2021 &copy;</strong></li>
+            </ul>
+        </div>
+      </details>
     
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--original
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
-
-    <!--desde la página de bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-    <!--my script
     <script src="js/register-sw.js"></script>
-    -->
+    <script src="js/music-port.js"></script>
+    <!--<script src="https://code.jquery.com/jquery.slim.min.js"</script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>-->
+    <script src="js/jquery.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--my script-->
   </body>
 </html>
