@@ -6,6 +6,7 @@ const cacheName = 'cache-version-1';
 const precache = [
   './js/register-sw.js',
   './index.html',
+  './favicon.ico',
   './music.html',
   './css/estilo.css',
   './offline.html'
