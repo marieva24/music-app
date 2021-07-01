@@ -99,7 +99,6 @@ self.addEventListener('fetch', event => {
         // Tomamos el response cache de arriba
         return fetch(event.request).then(
           function(response) {
-
             // Chequeamos si recibimos una respuesta valida
             if(shouldAcceptResponse(response)) {
               return response;
