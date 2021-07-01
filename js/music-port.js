@@ -62,29 +62,6 @@ function buscar(evento){
      tw.href = info.artists[0].strTwitter;
      tw.innerHTML = info.artists[0].strTwitter;
 
-      
-            
-
- 		/*return ` 
- 			<h2>${info.artists[0].strArtist}</h2>
- 			<p>${info.artists[0].strBiographyES}</p>
- 			<p>${info.artists[0].strGenre}</p>
- 			<p>${info.artists[0].strWebsite}</p>
- 			<a href="${info.artists[0].strTwitter}">Link a la página</a>
- 		`
- 		/*<img src="${info.image_url}" />
- 		<article class="prodcard h-100 card col-12 col-sm-5 col-md-4 col-lg-3 p-0 shadow bg-bg3 rounded m-2">
-                    <div class="card-body d-flex align-content-stretch flex-wrap shadow-sm p-3 bg-white rounded pb-4 m-auto">
-                        <h2 class="h3 card-title py-1"><?= $producto['nombre'];?></h2>
-                        <p class="card-text text-wrap py-1"><?= $producto['descripcion'];?></p>
-                        <p class="font-weight-bold h5 card-text py-3 "><?= $producto['precio'];?></p>
-                        <a href="index.php?s=productos-detalles&id=<?= $producto['producto_id'];?>" class="col-12 m-auto text-center d-block btn btn-primary btn-lg botton-card">Ver detalles</a>
-                    </div>
-                    <img class="align-baseline d-block w-100 img-fluid" src="<?= 'img/' . $producto['imagen'];?>" alt="<?= $producto['imagen_descripcion'];?>">
-
-                </article>
- 		
- 	}*/
  }
 
 
