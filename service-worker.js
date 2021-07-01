@@ -9,7 +9,7 @@ const precache = [
   './js/bootstrap.bundle.min',
   './js/bootstrap.bundle.min.js.map',
   './js/app.js',
-  'js/jquery.slim.min.js',
+  './js/jquery.slim.min.js',
   './index.html',
   './favicon.ico',
   './music.html',
