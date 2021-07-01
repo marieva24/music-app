@@ -5,6 +5,7 @@ const cacheName = 'cache-version-1';
 //'./css/estilo.css',
 const precache = [
   './js/register-sw.js',
+  './js/music-port.js',
   './js/bootstrap.min.js.map',
   './js/bootstrap.bundle.min',
   './js/bootstrap.bundle.min.js.map',
