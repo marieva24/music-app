@@ -8,13 +8,11 @@ const precache = [
   './js/bootstrap.min.js.map',
   './js/bootstrap.bundle.min',
   './js/bootstrap.bundle.min.js.map',
-  './js/app.js',
   './js/jquery.slim.min.js',
   './index.html',
   './favicon.ico',
   './music.html',
   './css/estilo.css',
-  './css/style.css',
   './css/bootstrap.min.css.map',
   './css/bootstrap.min.css',
   './offline.html',
@@ -28,20 +26,11 @@ const precache = [
   './res/fonts/SuisseIntl-Bold.woff2',
   './res/fonts/SuisseIntl-Bold.ttf',
   './res/fonts/SuisseIntl-Bold.eot',
-  './res/img/bg-home-xl.jpg',
   './res/img/bg-home-big.jpg',
   './res/img/bg-home-xl.jpg',
   './res/img/bg-home-tabl.jpg',
   './res/img/bg-home-xs.jpg',
-   './res/img/bg-home-sm.jpg',
-  './res/imagenes-juegos/blue_block.png',
-  './res/imagenes-juegos/pink_block.png',
-  './res/imagenes-juegos/Tetris Game.gif',
-  './res/imagenes-juegos/navy_block.png',
-  './res/imagenes-juegos/green_block.png',
-  './res/imagenes-juegos/yellow_block.png',
-  './res/imagenes-juegos/purple_block.png',
-  './res/imagenes-juegos/peach_block.png'
+  './res/img/bg-home-sm.jpg'
 ];
 
 
