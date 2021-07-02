@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'SuisseBold';
     src: url('../res/fonts/SuisseIntl-Bold.eot');
@@ -8,7 +7,6 @@
         url('../res/fonts/SuisseIntl-Bold.ttf') format('truetype'),
         url('../res/fonts/SuisseIntl-Bold.svg#SuisseIntl-Bold') format('svg');
 }
-
 @font-face {
     /*font-family: 'Suisse Int\'l';*/
     font-family: 'SuisseMed';
@@ -60,7 +58,6 @@ h1, h2, h3 {
 	font-size: 1.8em;
     margin: 0.7em 0;
 }
-
 header {
     padding: 7px;
     text-align: center;
@@ -69,7 +66,6 @@ header {
 .main{
 	min-height: 70vh;
 }
-
 .bg1{
     background-color: var(--violet);
 }
@@ -88,7 +84,6 @@ input.buscar{
 	outline: none;
 	font-size: 105%;
 	font-family: inherit;
-    /*width: calc(100% - 20px);*/
 }
 .buscar button{
 	border: none;
@@ -117,22 +112,6 @@ button:hover{
     font-style: bold;
     font-size: 120%;
 }
-/*.main{  
-    background: url(../res/img/bg-home-pc.jpg) no-repeat right;
-    background-size:cover;
-    width: 100vw;
-    height: calc(100vw * 0.57222222);
-        max-width: 1440px;
-        max-height: 824px;
-        */
-    /*#banner{
-        background-image: url(../img/banner_pc_grande.png);    
-        background-size:cover;
-        width: 100vw;
-        height: calc(100vw * 0.57222222);
-        max-width: 1440px;
-        max-height: 824px;
-}*/
 footer {
     background-color: var(--azul);
 }
@@ -160,7 +139,7 @@ footer {
 
 /* ---Offline --- */
 
-body.offline .offline-banner {
+/*body.offline .offline-banner {
     transition: all 0.5s;
     margin: 0;
 }
@@ -177,7 +156,7 @@ body:not(.offline) .offline-banner {
 body.offline .offline-banner {
     transition: all 0.5s;
     margin: 0;
-}
+}*/
 .bienvenido{
     max-width: 600px;
 }

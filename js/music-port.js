@@ -23,24 +23,12 @@ function buscar(evento){
 }
  function datos(info){
      console.log(info.artists[0].strBiographyES);
- 	//console.log(info.results);
  	const resultadoDeBusqueda = document.getElementById("result");
      console.log(resultadoDeBusqueda);
-    //const { strBiographyES } = info.artists;
- 	// para crear un nuevo array con los datos y pegarles en el html para eso usamos map
- 	//Input de busqueda, para buscar un artista. El valor ingresado le pega a la API proporcionada arriba. 
- 	//El resultado se presenta en el content area.
  	//Datos a mostrar: 
-     // Biografia     strBiographyES" , una foto del grupo  ????  "strArtistBanner", 
-     //genero musical ??? "strGenre" , website  "strWebsite", redes sociales   "strFacebook"   "strTwitter".
- 	//Example - theaudiodb.com/api/v1/json/1/search.php?s=coldplay
- 	//url:   theaudiodb.com/api/v1/json/1
- 	///search.php?s=coldplay
+    // Biografia     strBiographyES" , una foto del grupo  "strArtistBanner", 
+    //genero musical "strGenre" , website  "strWebsite", redes sociales   "strFacebook"   "strTwitter".
 
- 	//search.php?s={Artist name}      
- 	//artist.php?i={artistid}
-
- 	//resultadoDeBusqueda.innerHTML = info.artists[0].strArtist
      const name = document.getElementById("name");
      const foto = document.getElementById("foto");
      const genre = document.getElementById("genre");
@@ -50,7 +38,6 @@ function buscar(evento){
      const tw = document.getElementById("tw");
 
      name.innerHTML = info.artists[0].strArtist;
-     //foto.innerHTML = info.artists[0].strArtistBanner;
      foto.alt = info.artists[0].strArtistBanner;
      foto.src = info.artists[0].strArtistBanner;
      genre.innerHTML = info.artists[0].strGenre;
@@ -61,7 +48,6 @@ function buscar(evento){
      fb.innerHTML = info.artists[0].strFacebook;
      tw.href = info.artists[0].strTwitter;
      tw.innerHTML = info.artists[0].strTwitter;
-
  }
 
 

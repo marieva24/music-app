@@ -33,8 +33,6 @@ const precache = [
   './res/img/bg-home-xs.jpg',
   './res/img/bg-home-sm.jpg'
 ];
-
-
 // Instalación
 self.addEventListener('install', event => {
 
@@ -49,11 +47,8 @@ self.addEventListener('install', event => {
       })
   );
 });
-
-
 // Update - Es decir, si cambia una parte del SW (nombre), updatea el cache 
 self.addEventListener('activate', event => {
-
   const cacheWhitelist = [cacheName];
 
   // Esto es lo que updatea cada una de las keys en el mapa del caché
@@ -73,8 +68,6 @@ self.addEventListener('activate', event => {
       })
   );
 });
-
-
 // Chequeamos la response
 function shouldAcceptResponse(response) {
     return response.status !== 0 && !(response.status >= 400 && response.status < 500) || 
